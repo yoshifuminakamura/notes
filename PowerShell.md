@@ -12,7 +12,7 @@ https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v8.9.1.0p1-Beta
 
 Finally, agent forwarding with PowerShell works on all hosts at 2023/10/20.
 
-# X11 with [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+# X11 with [VcXsrv(XLaunch)](https://sourceforge.net/projects/vcxsrv/)
 ```
 PS C:\> [System.Environment]::SetEnvironmentVariable("DISPLAY", "localhost:0.0", "User")
 PS C:\> $env:DISPLAY
