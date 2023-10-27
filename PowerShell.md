@@ -1,4 +1,4 @@
-At 2023/10/20
+# Agent problem
 
 The following issue with PowerShell SSH that had been occurring on a specific host for quite some time 
 ```
@@ -10,4 +10,16 @@ has been resolved with the following update.
 https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v8.9.1.0p1-Beta
 `OpenSSH-Win64-v8.9.1.0.msi`
 
-Finally, agent forwarding with PowerShell works on all hosts.
+Finally, agent forwarding with PowerShell works on all hosts
+
+# X11
+- X11 server : https://sourceforge.net/projects/vcxsrv/
+- DISPLAY
+```
+PS C:\> [System.Environment]::SetEnvironmentVariable("DISPLAY", "localhost:0.0", "User")
+PS C:\> $env:DISPLAY
+```
+- ssh -X or -Y
+```
+PS C:\> ssh -[X|Y] server
+```
